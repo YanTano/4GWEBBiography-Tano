@@ -1,0 +1,110 @@
+body{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+#profile-svg{
+    margin: 25px 0 0 8%;
+    display: block;
+    width: 90%;
+}
+polyline{
+    stroke: #00b7ff;
+    stroke-width: 2;
+}
+#profile-background{
+    background-image: linear-gradient(360deg, #009ffd  0%, transparent 80%);
+}
+#myPhoto{
+    height:168px;
+    width: 108px;
+    transform: translate(20px,0px);
+}
+#info-background{
+    background-image: linear-gradient(360deg, #009ffd  0%, transparent 80%);
+}
+text{
+    font-family: calibri;
+    font-size:20px;
+    fill: #34bfff;
+    font-weight: bold;
+}
+#generalInfo{
+    transform: translate(170px,115px);
+}
+#inputInfo{
+    transform: translate(165px,145px);
+}
+#biography-content {
+    height: 480px;
+    width: 85%;
+    margin: 0 0 0 8%;
+    position: absolute;
+    display: block;
+}
+h1{  
+    width: 50%;
+    border: 3px solid #00b7ff;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    background-color: blue;
+    margin: 0;
+    font-family: 'Electrolize', sans-serif;
+    color: #34bfff;
+    background-image: linear-gradient(360deg, #009ffd  0%, transparent 50%);
+}
+p{
+    word-spacing: 5px;
+    line-height: 30px;
+    text-indent: 50px;
+    padding: 10px;
+    border: 3px solid #00b7ff;
+    border-radius: 0px 10px 0px 0px;
+    font-size: 20px;
+    font-family: Arial;
+    color: #34bfff;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    margin:0 0 20px 0;
+    font-weight: bold;
+}
+.cloud {
+    position: absolute;
+    top: 0px;
+    right: -500px;
+    opacity: .8;
+    animation: cloud 10s linear 0s infinite reverse;
+    z-index: 99;
+}
+@keyframes light {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes cloud {
+    from {right:-500px;}
+    to {right: 102%;}
+}
+/*MOBILE RESPONSIVE-------------------- */
+
+/* FOR LAPTOPS-------------------- */
+@media only screen and (min-width: 992px){
+
+}
+
+/* FOR TABLETS-------------------- */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+/*FOR PORTRAIT PHONES-------------------- */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+}
+
+@media only screen and (max-width: 575px){
+h1{font-size: 20px;}
+p{font-size: 15px; line-height: 20px;}
+#biography-content {width: 80%;}
+}
